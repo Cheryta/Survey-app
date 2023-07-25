@@ -1,0 +1,20 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Survey forms</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+   <div *ngIf="surveysList.length !==0; else elseBlock">
+
+   </div>
+   <ng-template #elseBlock>
+      <div class="ion-text-center">
+         <h3>No survey !</h3>
+         You do not have registered surveys. You can use the floating button below to add some.
+      </div>
+   </ng-template>
+</ion-content>
