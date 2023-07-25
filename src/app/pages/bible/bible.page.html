@@ -1,0 +1,16 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Bible - JHON chapter 3</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-list>
+    <ion-item *ngFor="let verse of verses">
+        <ion-label>
+          <h2><strong>{{verse.references}}</strong></h2>
+          <p>{{verse.text}}</p>
+        </ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>

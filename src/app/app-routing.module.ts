@@ -14,6 +14,14 @@ const routes: Routes = [
   {
     path: 'picture',
     loadChildren: () => import('./pages/picture/picture.module').then( m => m.PicturePageModule)
+  },
+  {
+    path: 'bible',
+    loadChildren: () => import('./pages/bible/bible.module').then( m => m.BiblePageModule)
+  },
+  {
+    path: 'infos',
+    loadChildren: () => import('./pages/infos/infos.module').then( m => m.InfosPageModule)
   }
 ];
 

@@ -18,3 +18,4 @@ import { PicturePage } from './picture.page';
   declarations: [PicturePage]
 })
 export class PicturePageModule {}
+
